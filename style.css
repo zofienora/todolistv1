@@ -27,6 +27,10 @@ h1 {
     letter-spacing: 5px;
 }
 
+li {
+    list-style: none;
+}
+
 /* Global Classes----------------------------------------------- */
 
 .global {

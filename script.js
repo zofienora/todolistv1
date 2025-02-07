@@ -41,10 +41,23 @@ function todoFunction() {
         }
     });
 
-    // Append checkbox, text, and delete button to the list item
-    listItem.appendChild(checkbox);
-    listItem.appendChild(taskText);
-    listItem.appendChild(deleteButton);
+    // Create the divs inside <li> (matching your HTML structure)
+    const checkboxDiv = document.createElement('div');
+    checkboxDiv.classList.add("checkbox"); // Ensure it matches your existing class
+    checkboxDiv.appendChild(checkbox); // Put checkbox inside its div
+
+    const textDiv = document.createElement('div');
+    textDiv.classList.add("listvalue"); // Ensure it matches your existing class
+    textDiv.appendChild(taskText); // Put task text inside its div
+
+    const deleteDiv = document.createElement('div');
+    deleteDiv.classList.add("delete"); // Ensure it matches your existing class
+    deleteDiv.appendChild(deleteButton); // Put delete button inside its div
+
+    // Append the divs to the <li> task
+    listItem.appendChild(checkboxDiv);
+    listItem.appendChild(textDiv);
+    listItem.appendChild(deleteDiv);
 
     // Append the new task to the existing <ul> list
     document.getElementById('todo-list').appendChild(listItem);

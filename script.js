@@ -26,7 +26,12 @@ function todoFunction() {
     // Create a delete button
     const deleteButton = document.createElement('button');
     deleteButton.textContent = "❌"; // Use an emoji or style it in CSS
-    deleteButton.classList.add("delete-button");
+    deleteButton.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="blue">
+        <line x1="5" y1="5" x2="19" y2="19" stroke="blue" stroke-width="3" stroke-linecap="round"/>
+        <line x1="5" y1="19" x2="19" y2="5" stroke="blue" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+`;    deleteButton.classList.add("delete-button");
     // Add event listener to delete button
     deleteButton.addEventListener('click', function() {
         listItem.remove(); // Remove the task when delete button is clicked

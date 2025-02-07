@@ -45,3 +45,34 @@ li {
 
 
 /*  */
+
+#todo-list li {
+    display: flex; /* Enables Flexbox */
+    flex-direction: row; /* Ensures items are in a row */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Spaces them out */
+    padding: .7em;
+    border-bottom: 1px solid #ddd; /* Optional: Separates items */
+}
+
+.checkbox {
+    width: 10%;
+}
+
+.listvalue {
+    width:80%;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.delete {
+    width: 10%;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: blue; /* Changes the ❌ to blue */
+    cursor: pointer;
+}

@@ -40,11 +40,10 @@ li {
     margin-top: 3em;
 }
 
-/* Header------------------------------------------------------- */
 
 
 
-/*  */
+/* list items  */
 
 #todo-list li {
     display: flex; /* Enables Flexbox */
@@ -69,3 +68,16 @@ li {
     width: 10%;
 }
 
+.task-checkbox {
+    width: 15px;
+    height: 15px;
+}
+
+.delete-button {
+    background-color: transparent;
+    height: 5px;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}

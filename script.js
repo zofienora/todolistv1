@@ -110,5 +110,12 @@ const affirmations = [
   
   function randomAff() {
     const x = document.getElementById('aff');
-    
+    const randomIndex = Math.floor(Math.random() * affirmations.length);
+    x.textContent = affirmations[randomIndex]; // Update the text content
   }
+
+  // Run immediately when the page loads
+randomAff();
+
+// Update every hour (3600000 ms = 1 hour)
+setInterval(randomAff, 3600000);

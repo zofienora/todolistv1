@@ -109,3 +109,14 @@ li {
     padding: 5px;
     cursor: pointer;
 }
+
+/* resposive, mobile first */
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        display: none;
+    }
+}

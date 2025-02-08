@@ -59,8 +59,6 @@ li {
     border: 2px solid black;
     padding: .58em 1em;
     outline: none; /* Remove default outline */
-
-
 }
 
 #addButton:hover {
@@ -80,7 +78,14 @@ li {
     justify-content: space-between; /* Spaces them out */
     padding: .7em;
     border-bottom: 1px solid #ddd; /* Optional: Separates items */
+    text-align: center;
 }
+
+#todo-list {
+    padding-left: 0;
+}
+
+
 
 .checkbox {
     width: 10%;
@@ -119,4 +124,24 @@ li {
     p {
         display: none;
     }
+    #todoInput {
+        padding: .5em 1em;
+        border-radius: 0%;
+        width: 70%; /* Make it full width */      
+    }   
+    #addButton {
+        border: none;
+        background-color: hsla(220, 100%, 57%, 0.441);
+        padding: .7em .7em;
+    }
+
+    #todo-list li {
+        flex-direction: row; /* Ensures items are in a row */
+        align-items: center; /* Align items vertically */
+        justify-content: space-between; /* Spaces them out */
+        padding: .7em;
+        border-bottom: 1px solid #ddd; /* Optional: Separates items */
+        font-size: .9rem;
+    }
+
 }

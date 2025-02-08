@@ -81,3 +81,34 @@ document.getElementById('todoInput').addEventListener('keydown', function(event)
         todoFunction(); // Call your function
     }
 });
+
+// having an array of affirmations, randomly selected
+
+const affirmations = [
+    "I am capable of achieving my goals.",
+    "I believe in myself and my abilities.",
+    "I radiate confidence and positivity.",
+    "I can do hard things.",
+    "I am strong, resilient, and fearless.",
+    "I attract success and happiness.",
+    "I deserve love, success, and abundance.",
+    "I am constantly growing and evolving.",
+    "I choose to focus on what I can control.",
+    "I am enough just as I am.",
+    "I embrace challenges as opportunities for growth.",
+    "I am surrounded by love and support.",
+    "I have the power to create change in my life.",
+    "I am grateful for all that I have.",
+    "I trust myself to make the right decisions.",
+    "I am worthy of happiness and peace.",
+    "I release self-doubt and welcome confidence.",
+    "I am in charge of my own happiness.",
+    "I have everything I need within me.",
+    "I am proud of who I am becoming."
+  ];
+
+  
+  function randomAff() {
+    const x = document.getElementById('aff');
+    
+  }

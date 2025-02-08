@@ -31,14 +31,33 @@ li {
     list-style: none;
 }
 
+button {
+    padding: 0px;
+    margin: 0;
+}
+
 /* Global Classes----------------------------------------------- */
 
 .global {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
     margin-top: 3em;
+    align-items: center;
+    align-content: center;
 }
+
+/* ---------------- */
+
+.partone__container {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+    gap: 20px;
+}
+
 
 /* list items  */
 
@@ -125,9 +144,11 @@ li {
         display: none;
     }
     #todoInput {
-        padding: .5em 1em;
+        padding: 1.5em 1em;
         border-radius: 0%;
-        width: 70%; /* Make it full width */      
+        border: 1px solid black;
+        width: 70%; /* Make it full width */     
+        font-size: 0.5rem; 
     }   
     #addButton {
         border: none;
@@ -141,7 +162,7 @@ li {
         justify-content: space-between; /* Spaces them out */
         padding: .7em;
         border-bottom: 1px solid #ddd; /* Optional: Separates items */
-        font-size: .9rem;
+        font-size: .5rem;
     }
 
 }
